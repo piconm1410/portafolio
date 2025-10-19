@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Proyectos - Portafolio de Ingeniero de Sistemas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle-button">
+            <i class="fas fa-sun"></i>
+        </button>
+    </header>
+
+    <main>
+        <section id="proyectos" class="projects-section scroll-animate">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="projects-grid">
+                    <!-- Proyecto 1 -->
+                    <div class="project-card" 
+                         data-title="FindCat Aplicativo de Busqueda de Gatitos" 
+                         data-image="/imagenes/FindCat.png" 
+                         data-description="El Proposito de esta aplicacion movil es poder proporcionar una facilidad para las personas que pierden
+                          a su gatos para asi facilitar la busqueda con un aplicativo para que la gente pueda apoyar y promover una buena ayuda colaborativa"
+                         data-tech="HTML,PHP,MySQL"
+                         data-live-url="#"
+                         data-repo-url="#">
+                        <img src="/imagenes/logo-gato.png" alt="Proyecto 1">
+                        <div class="project-info">
+                            <h3>FindCat</h3>
+                            <p>Aplicativo movil para el apoyo en Busqueda y Rescate de gatitos con IA y geolocalizacion.</p>
+                            <button class="open-modal-btn">Ver más</button>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="project-card"
+                         data-title="Subete no Hanbai" 
+                         data-image="/imagenes/ventaImportados.png" 
+                         data-description="Tienda web Virtual de Productos importados Asiaticos para un negocio de importacion de Productos"
+                         data-tech="JavaScript,HTML,CSS,Node.js"
+                         data-live-url="#"
+                         data-repo-url="#">
+                        <img src="/imagenes/subetenohanbai.png" alt="Proyecto 2">
+                        <div class="project-info">
+                            <h3>Tienda Virtual de Productos Importados</h3>
+                            <p>Tienda web Virtual de Productos importados Asiaticos para un negocio de importacion.</p>
+                            <button class="open-modal-btn">Ver más</button>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="project-card"
+                         data-title="Sistema de Gestion de Asistencias con Geolocalizacion" 
+                         data-image="Imagenes/marcarasistencias.png" 
+                         data-description="Descripción detallada del Proyecto 3. Enfócate en los resultados y el impacto del proyecto."
+                         data-tech="Python,Django,PostgreSQL"
+                         data-live-url="https://studio--jcb-asistencia.us-central1.hosted.app/"
+                         data-repo-url="#">
+                        <img src="Imagenes/asistencias.png" alt="Proyecto 3">
+                        <div class="project-info">
+                            <h3>Sistema de Asistencias</h3>
+                            <p>Aplicativo Web para Gestionar Asistencias del Personal tecnico de una empresa.</p>
+                            <button class="open-modal-btn">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" id="scroll-to-top" class="scroll-to-top-button" title="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <footer>
+        <p>&copy; 2025 - Mi Portafolio Profesional</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modal-img" src="" alt="Imagen del Proyecto">
+                </div>
+                <div class="modal-details">
+                    <div id="modal-tech-tags" class="modal-tech-tags">
+                        <!-- Tags se insertarán aquí por JS -->
+                    </div>
+                    <p id="modal-description"></p>
+                    <div class="modal-links">
+                        <a id="modal-live-link" href="#" class="btn" target="_blank">Ver Proyecto</a>
+                        <a id="modal-repo-link" href="#" class="btn btn-outline" target="_blank">Ver Repositorio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
